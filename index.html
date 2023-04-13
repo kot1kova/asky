@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../ASKY/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
+    <title>Asky</title>
+</head>
+
+<body>
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="pointer" viewBox="0 0 14 20">
+            <g>
+                <path d="M7.00019 4.08563e-05C5.14522 0.00481322 3.36748 0.731961 2.05564 2.02252C0.744042 3.31309 0.0050083 5.06199 0 6.88693C0 10.5517 6.35806 19.1218 6.64779 19.4936L7.0326 20L7.3849 19.4618C7.64214 19.1219 14 10.5516 14 6.88688C13.995 5.06183 13.2559 3.31292 11.9444 2.02248C10.6326 0.73192 8.8549 0.00476463 6.9998 0L7.00019 4.08563e-05ZM7.03269 9.85859C6.23348 9.85859 5.46712 9.54633 4.90189 8.99037C4.33682 8.43425 4.01944 7.68022 4.01944 6.89393C4.01944 6.10777 4.33682 5.35361 4.90189 4.79762C5.46712 4.24166 6.23352 3.9294 7.03269 3.9294C7.83174 3.9294 8.59826 4.24166 9.16337 4.79762C9.72844 5.35357 10.046 6.10777 10.046 6.89393C10.046 7.68026 9.72844 8.43425 9.16337 8.99037C8.5983 9.54633 7.83174 9.85859 7.03269 9.85859Z" /> </g>
+        </symbol>
+        <symbol id="watch" viewBox="0 0 20 20">
+            <g>
+                <path d="M10 0C7.34783 0 4.80424 1.05354 2.92894 2.92894C1.05354 4.80434 0 7.34768 0 10C0 12.6523 1.05354 15.1958 2.92894 17.0711C4.80434 18.9465 7.34768 20 10 20C12.6523 20 15.1958 18.9465 17.0711 17.0711C18.9465 15.1957 20 12.6523 20 10C19.997 7.34887 18.9424 4.80709 17.0676 2.93258C15.1931 1.0578 12.6511 0.00301294 10 0ZM13.3699 13.3697C13.1994 13.5401 12.9683 13.6359 12.7272 13.6359C12.4862 13.6359 12.255 13.5401 12.0846 13.3697L9.35736 10.6424C9.1867 10.472 9.09093 10.2409 9.09093 9.99979V4.54533C9.09093 4.22046 9.26422 3.92035 9.54547 3.75802C9.82672 3.59568 10.1733 3.59568 10.4545 3.75802C10.7358 3.92035 10.9091 4.22047 10.9091 4.54533V9.62338L13.3699 12.0842C13.5403 12.2546 13.6361 12.486 13.6361 12.727C13.6361 12.9681 13.5403 13.1992 13.3699 13.3697Z" /> </g>
+        </symbol>
+        <symbol id="phone" viewBox="0 0 20 20">
+            <g>
+                <path d="M7.67701 12.3242C8.92136 13.5686 10.2883 14.5701 11.6855 15.3064L14.3069 12.6321L19.0737 13.7314C19.5694 13.8465 20 14.147 20 14.6553V17.9604C20 19.022 19.1812 19.8984 18.1222 19.9711C13.9713 20.2591 9.17642 18.3911 5.3933 14.6079C1.60784 10.822 -0.254839 6.02669 0.0280351 1.87795C0.100703 0.818831 0.976895 0 2.03856 0H5.34339C5.85159 0 6.15455 0.428084 6.26969 0.923877L7.36887 5.69363L4.69503 8.31544C5.43118 9.71005 6.43267 11.0773 7.67701 12.3242Z" /> </g>
+        </symbol>
+    </svg>
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="#"> <img src="./img/logo.png" alt="logo"> </a>
+                    </div>
+                    <div class="header__info">
+                        <p class="info__content"> ІТ СЕРВІС | Центр обслуговування </p>
+                        <div class="map__point">
+                            <a class="address" href="https://goo.gl/maps/hTtZE5zgXktr9m736" target="_blank">
+                                <svg class="icon__point">
+                                    <use xlink:href="#pointer"></use>
+                                </svg>
+                                <p class="map__info"> Київ, вул. Юрія Поправки 9 </p>
+                            </a>
+                        </div>
+                        <!--map__point-->
+                    </div>
+                    <!-- header__info -->
+                    <div class="info__time">
+                        <svg class="icon__time">
+                            <use xlink:href="#watch"></use>
+                        </svg>
+                        <div class="days__wrapper">
+                            <div class="days__info">
+                                <p class="days"> Будні </p>
+                                <p class="days__time"> | 10:00 – 17:00 </p>
+                            </div>
+                            <div class="days__info">
+                                <p class="days"> Субота </p>
+                                <p class="days__time"> | 12:00 – 16:00 </p>
+                            </div>
+                        </div>
+                    </div> <!--info__time-->
+                    <div class="info__phone">
+                        <svg class="icon__phone">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <div class="num__phone">
+                            <p class="number">
+                                +38 (098) 300-84-09
+                            </p>
+                            <p class="number life">
+                                +38 (093) 043-79-20
+                            </p>
+                        </div>
+
+                    </div>
+                </div><!--header__inner-->
+            </div>
+        </header>
+        <nav class="nav" id="nav">
+           <div class="container">
+               <a href="" class="nav__link" data-scroll="#home">Головна</a>
+               <a href="" class="nav__link" data-scroll="#services">Послуги</a>
+               <a href="" class="nav__link" data-scroll="#sale">Знижки</a> <a href="" class="nav__link" data-scroll="#guarantee">Гарантiя</a>
+               <a href="" class="nav__link" data-scroll="#contacts">Контакти</a>
+           </div>
+        </nav>
+        <section class="intro" id="intro">
+           <div class="container">
+               <div class="intro__inner">
+                   <h1 class="intro__title">
+                   Ремонтуємо <br> по всій Україні
+                   </h1>
+                   <p class="intro__subtitle">
+                   Доставка відбувається через кур'єрську службу
+                   </p>
+                   <div class="bnt__wrapper">
+                       <button class="btn btn__blue">
+                       Заповнити форму
+                   </button>
+                   <button class="btn btn__orange">
+                       Заявка на ремонт
+                   </button>
+                   </div>
+               </div>
+           </div>
+
+        </section>
+        <section class="catalog" id="catalog">
+            <div class="container">
+               <div class="item__inner">
+                 <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/phone.png" alt="phone" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Телефони
+                    </div>
+                 </div>
+                 <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/notebook.png" alt="notebook" class="notebook">
+                    </div>
+                    <div class="item__text">
+                        Ноутбукi
+                    </div>
+                 </div>
+                 <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/audio.png" alt="audio" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Аудиотехника
+                    </div>
+                 </div>
+                 <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/tools.png" alt="tools" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Iнструменти
+                    </div>
+                 </div>
+
+               </div> <!--item__inner-->
+             <div class="item__wrapper">
+                <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/audio.png" alt="audio" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Аудиотехника
+                    </div>
+                 </div>
+                   <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/tools.png" alt="tools" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Iнструменти
+                    </div>
+                 </div>
+                   <div class="catalog__item">
+                    <div class="item__img">
+                      <img src="./img/services/phone.png" alt="phone" class="photo">
+                    </div>
+                    <div class="item__text">
+                        Телефони
+                    </div>
+
+                 </div>
+                   <div class="catalog__item">
+                    <div class="item__img">
+                        <img src="./img/services/notebook.png" alt="notebook" class="notebook">
+                    </div>
+                    <div class="item__text">
+                        Ноутбукi
+                    </div>
+                 </div>
+
+
+               </div><!--item__wrapper-->
+            </div> <!--container-->
+        </section>
+    <section class="info__why" id="info__why">
+       <div class="container">
+           <div class="why__inner">
+               <div class="title__text">
+                   <h2>Чому ми?</h2>
+               </div>
+               <div class="text">
+               Тому що з нами дуже зручно. Спеціалістам сервісного центра «АСКІ» під силу ремонт споживчої електроніки будь якої складності. Вони з радістю приймуть на ремонт Вашу техніку. Незначні несправності можуть бути усунені на місці, так як основні запчастини у майстрів завжди при собі. Ціни нижче середніх в Києві при незмінній якості послуг.
+               </div>
+
+           </div>
+       </div>
+
+    </section>
+    <section class="sale" id="sale">
+       <div class="container">
+           <div class="sale__inner">
+               <div class="title__text">
+                   <h2>Знижки</h2>
+               </div>
+               <div class="text">
+               Дисконтна карта дозволить вам зекономити на послугах «АСКІ», але при цьому не втрачати якості послуг. Дисконтна карта дарується кожному, хто скористався послугами «АСКІ» хоча б один раз та бажає перейти у категорію постійних клієнтів. Майстер вручить її вам разом із заповненою квитанцією після завершення ремонту. Якісний сервіс — це наш пріорітет!
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="guarantee" id="guarantee">
+       <div class="container">
+       <div class="guarantee__inner">
+           <div class="title__text">
+               <h2>Гарантiя</h2>
+           </div>
+        <div class="text">
+            Якщо вам потрібен дійсно якісний ремонт ТО та Р (технічне обслуговування та ремонт) - звертайтесь до нашої компанії.
+            Гарантійний строк на виконані роботи — Від 1 до 12 місяців.
+            Оформлюється гарантійний талон.
+            Звільнітся від клопотів! Працюючи з нами, Ви зможете зекогомити час та гроші. Дякуємо вам за довіру до нас! Ми завжди будемо раці співпрвці з вами.
+        </div>
+       </div>
+       </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__inner">
+               <div class="footer__left">
+                <div class="logo__footer">
+                    <img src="./img/logo.png" alt="logo-footer" class="logo">
+                </div>
+                <div class="phone__footer">
+                <p class="tel">
+                    Телефон:
+                </p>
+                <p class="number">
+                +38 (098) 300-84-09
+                </p>
+                <p class="number life">
+                +38 (093) 043-79-20
+                </p>
+                </div>
+                <div class="schedule">
+                    <p class="list">
+                        Графiк роботи:
+                    </p>
+                    <div class="weekdays">
+                        <p class="wd">
+                            Буднi
+                        </p>
+                        <p class="w__time">
+                            | 10:00 – 17:00
+                        </p>
+                    </div>
+                    <div class="weekdays">
+                        <p class="wd">
+                            Субота
+                        </p>
+                        <p class="w__time">
+                            | 12:00 – 16:00
+                        </p>
+                    </div>
+                    <div class="weekdays">
+                        <p class="wd">
+                            Недiля
+                        </p>
+                        <p class="w__time">
+                            | Вихiдний
+                        </p>
+                    </div>
+                </div>
+               </div>
+                <div class="mail">
+                    <div class="request">
+                        <p class="request__repair">
+                            Заявка на ремонт
+                        </p>
+                        <div class="check">
+                            <form action="#" class="form">
+                                <input type="name" placeholder="Ваше iм'я" name="name" class="input">
+                                <input type="phone" placeholder="Номер телефона" name="tel" class="input">
+                                <textarea type="comment" required placeholder="Коментар"  name="comment" id="comment"></textarea>
+                            </form>
+                            <button type="submite" class="btn btn__form">Вiдправити</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.2584634278733!2d30.630062812873533!3d50.45491153645187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c554f1a7c0f5%3A0xa59165dc4122c624!2z0KHQtdGA0LLQuNGB0L3Ri9C5INGG0LXQvdGC0YAgwqvQkNCh0JrQmMK7IHwg0KDQtdC80L7QvdGCINC_0L7RgtGA0LXQsdC40YLQtdC70YzRgdC60L7QuSDRjdC70LXQutGC0YDQvtC90LjQutC4!5e0!3m2!1sru!2sua!4v1659398057018!5m2!1sru!2sua" width="590" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="footer__content">
+                        Наша адреса:
+                    </p>
+                    <div class="footer__map">
+                        <a class="address" href="https://goo.gl/maps/hTtZE5zgXktr9m736" target="_blank">
+                            <svg class="icon__point">
+                                <use xlink:href="#pointer"></use>
+                            </svg>
+                            <p class="map__info">мiсто Київ, вул. Юрія Поправки 9</p>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
